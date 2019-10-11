@@ -37,7 +37,8 @@ public class StudentMgmtApp implements CommandLineRunner{
 		s1.setMiddleName("Smith");
 		s1.setDateOfEnrollment(LocalDate.of(2019, 5, 24));		
 		
-		Transcript t1 = new Transcript(1L, "BS Computer Science");		
+		Transcript t1 = new Transcript();
+		t1.setDegreeTitle("BS Computer Science");
 	
 		transcriptRepository.save(t1);
 		studentRepository.save(s1);
