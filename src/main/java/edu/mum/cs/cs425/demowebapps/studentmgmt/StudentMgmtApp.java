@@ -40,7 +40,7 @@ public class StudentMgmtApp implements CommandLineRunner{
 		Transcript t1 = new Transcript();
 		t1.setDegreeTitle("BS Computer Science");
 	
-		transcriptRepository.save(t1);
+		s1.setTranscript(t1);
 		studentRepository.save(s1);
 		
 		Classroom c1 = new Classroom(1L, "McLaughlin building", "M105");
